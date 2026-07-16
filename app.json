@@ -1,0 +1,33 @@
+{
+  "name": "Session String Generator Bot",
+  "description": "Telegram bot to generate Pyrogram and Telethon session strings.",
+  "repository": "https://github.com/rahgir-Thepathfinder/session",
+  "logo": "https://telegram.org/img/t_logo.png",
+  "keywords": ["telegram", "pyrogram", "telethon", "session-generator", "bot"],
+  "success_url": "https://t.me/",
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID from https://my.telegram.org (used to run the bot itself).",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Your Telegram API HASH from https://my.telegram.org (used to run the bot itself).",
+      "value": ""
+    },
+    "BOT_TOKEN": {
+      "description": "Bot token from @BotFather.",
+      "value": ""
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
